@@ -1,0 +1,99 @@
+/*
+  Filename: layout.css
+  Target: lab05.html
+  Purpose: Page layout styling using CSS box model and floats
+*/
+
+
+aside:hover {
+  display: block;
+}
+
+.menu {
+  display: inline-block;
+}
+
+/* Step 3 & 4: Header, Aside, and Section Positioning */
+header {
+  border: 1px solid darkgray;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: lightgray;
+  text-align: center;
+}
+
+aside {
+  width: 30%;
+  float: right;
+  margin: 1em;
+  padding: 1.5em;
+  border: 3px solid #800080;
+  border-radius: 20px;
+  background-image: url("images/fade.jpg");
+  background-repeat: repeat-x;
+  background-position: top;
+  background-color: #ffffff;
+  box-shadow: 8px 8px 15px #888888;
+}
+
+#lists {
+  float: left;
+}
+
+table {
+  margin: auto;
+}
+
+#tables {
+  float: right;
+}
+
+#hyperlinks {
+  clear: both;
+  float: left;
+}
+
+#images {
+  float: right;
+}
+
+figure {
+  border: 2px solid #ccc;
+}
+
+#lists, #tables, #hyperlinks, #images {
+  width: 48%;
+  text-align: center;
+}
+
+ol, ul, dl {
+  text-align: left;
+}
+
+article {
+  min-width: 30em;
+}
+
+
+footer {
+  clear: both;
+  border-top: 4px double #333;
+}
+
+footer p {
+  display: inline-block;
+  width: 33%;
+}
+
+footer p:first-child {
+  float: left;
+}
+
+footer p:nth-child(2) {
+  text-align: center;
+}
+
+footer p:last-child {
+  float: right;
+  text-align: right;
+}
